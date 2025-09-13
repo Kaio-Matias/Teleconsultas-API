@@ -1,0 +1,130 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "api-teleconsulta",
+    "description": ""
+  },
+  "host": "localhost:80",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Default",
+      "description": "Endpoints of default endpoints"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "auth-token",
+      "in": "header"
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/created-contact": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contacts/{id}": {
+      "put": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Error400": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Descrição sobre o erro"
+        }
+      }
+    },
+    "Error406": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Descrição sobre o erro"
+        }
+      }
+    },
+    "Error403": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Descrição sobre o erro"
+        }
+      }
+    },
+    "ErrorTokenInvalid": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Token Invalid || Token not provided"
+        }
+      }
+    },
+    "DefaultIndex": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "example": "1.0.0"
+        }
+      }
+    }
+  }
+}
